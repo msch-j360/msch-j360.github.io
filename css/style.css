@@ -1,0 +1,28 @@
+body {
+  font-family: "rooney-sans", sans-serif;
+  line-height: 1.6;
+  background-color: #eee;
+}
+
+.container {
+  padding: 30px 15px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: "rooney-web",serif;
+  /*font-weight: 300;*/
+}
+
+h2 {
+  margin-top: 60px;
+}
+
+img {
+  width: 100%;
+}
+
+.light {
+  opacity: .4;
+}
