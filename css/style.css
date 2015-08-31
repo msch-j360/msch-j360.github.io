@@ -1,28 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "rooney-sans", sans-serif;
-  line-height: 1.6;
-  background-color: #eee;
+  background-color: rgba(241, 196, 15,1.0);
+  padding: 20px;
+  line-height: 1.4;
 }
 
-.container {
-  padding: 30px 15px;
-  max-width: 540px;
-  margin: 0 auto;
+p {
+  font-family: "rooney-sans", 'Helvetica Neue', arial, sans-serif;
 }
 
-h1, h2 {
-  font-family: "rooney-web",serif;
-  /*font-weight: 300;*/
+header, .posts {
+  max-width: 640px;
+  margin: 30px auto 40px auto;
 }
 
-h2 {
-  margin-top: 60px;
+strong {
+  font-weight: 800;
 }
 
-img {
-  width: 100%;
+h1 {
+  font-family: "rooney-web", 'Helvetica Neue', arial, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 7px;
 }
-
 .light {
   opacity: .4;
 }
+
+a {
+  text-decoration: none;
+  border-bottom: 3px solid rgba(0,0,0,.2);
+}
+a:hover {
+  border-bottom: 3px solid rgba(0,0,0,.5);
+}
+a:visited {
+  color: black;
+}
+
+.container a {
+  color: #3498db !important;
+  border-bottom: 2px solid #3498db;
+  opacity: .6;
+  transition: .25s all;
+}
+.container a:hover {
+  color: #2e8ece;
+  opacity: 1;
+}
+.container pre {
+  max-width: 60%;
+  margin: 20px 0;
+}
+.container p {
+  max-width: 60%;
+  font-size: 1.1em;
+  margin-bottom: 1.3em;
+  color: #333;
+}
+img.full {
+  width: 100%;
+  margin: 30px 0;
+}
+.kicker {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "rooney-sans", 'Helvetica Neue', arial, sans-serif;
+  font-size: .8em;
+  padding-right: 8px;
+  display: inline-block;
+}
+p .kicker {
+  width: 60px;
+}
+
+h2 {
+  font-family: "rooney-web", 'Helvetica Neue', arial, sans-serif;
+  font-size: 50px;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+h3 {
+  font-family: "rooney-web", 'Helvetica Neue', arial, sans-serif;
+  font-size: 40px;
+  color: #333;
+  margin: 50px 0 10px;
+}
+
+
+.current-lesson {
+  background-color: white;
+  max-width: 860px;
+  padding: 40px;
+  margin: 0 auto;
+  border-bottom: 5px solid rgba(221, 176, 5,1.0);
+  border-radius: 4px;
+}
+
+aside {
+  width: 30%;
+  float: right;
+  font-family: "rooney-sans", 'Helvetica Neue', arial, sans-serif;
+  opacity: .5;
+  font-size: .85em;
+}
+
+.post {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0,0,0,.4);
+}
+
+
+/*h3 {
+  font-family: "rooney-web", 'Helvetica Neue', arial, sans-serif;
+  font-size: 3.4em;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: -.02em;
+  color: #363636;
+}*/

@@ -1,79 +1,290 @@
-<html><head>
-	<meta charset="UTF-8">
-	<title>MSCH-J360 :: Web Design</title>
-  <!-- <link rel="stylesheet" href="reset.css"> -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<title>MSCH-J360 :: Web Design</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 <body>
+  <header>
+    <a href="/"><h1><span class="light">J360</span> Web Design</h1></a>
+    <nav>
+      <p>Lessons posted Monday. Projects due Friday. <a href="https://plus.google.com/hangouts/_/g55oo7bougg6b5f326f7m4avcya" target="_blank">Google Hangout</a> • <a href="https://j360.slack.com" target="_blank">Slack</a></p>
+    </nav>
+  </header>
   <div class="container">
-    <h1><span class="light">J360</span> Web Design</h1>
+    <div class="current-lesson">
 
-    <p>Thanks for enrolling in this course. The Internet is a fun place, so this should be fun.</p>
+      <span class="kicker">September 1.</span>
 
-    <h2>What I need you to do now</h2>
+      <h2><span class="light">1.</span> Hello, world. Let’s git started.</h2>
+      
+      <p><span class="kicker light">Goal</span> By the end of this lesson, you’ll have a website live on the internet. No training wheels.</p>
+      
+      <p><span class="kicker light">due</span> <strong>This is due Friday before midnight,</strong> but I wouldn’t wait until then. Get in touch early if you’re lost.</p></p>
+      <p><span class="kicker light">Lost?</span> Drop any and all questions in <a href="https://j360.slack.com/messages">Slack</a>. I'll have office hours this week in the <a href="https://plus.google.com/hangouts/_/g55oo7bougg6b5f326f7m4avcya">Google Hangout</a> (just jump in, I'll be in there) <strong>from 7 to 8 p.m. on Wednesday and Thursday.</strong></p>
 
-    <p>Consider this assignment 1. Normally, we’d take care of all of this junk in the classroom on day one, but alas, no classroom.</p>
+      <img class="full" src="https://media.giphy.com/media/iYDlg0CljYqTm/giphy.gif" alt="">
 
-    <ul>
-    <li>Schedule a brief Google Hangout with me. I’d like to meet with each of you via video chat for just a few minutes on Monday, Tuesday, or Wednesday to put a name with a face. Email me a time that works for you. I’m free anytime after 6 p.m. all three days.</li>    
-    <li>Download <a href="http://www.sublimetext.com/">Sublime Text</a>. It’s free.</li>
-    <li>Create a <a href="github.com">github</a> account. This is where all of your code and assignments will live. Also free.</li>
-    <li>Join our <a href="https://slack.com/">Slack</a> group. You’ll get an invite from me shortly. If you don’t, let me know.</li>
-    </ul>
+      <p>You should have signed up already for a <a href="https://github.com/">Github</a> username, downloaded the <a href="https://desktop.github.com/">Github Desktop</a> app, and installed <a href="http://www.sublimetext.com/">Sublime Text</a>.</p>
 
-    <h2>OK, so what's this all about?</h2>
+      <p>This <a href="http://knightlab.northwestern.edu/2013/08/02/how-to-portfolio-sites-for-journalists-github-makes-em-cheap-and-kinda-easy/">tutorial</a> from the Knight Lab at Northwestern might also be helpful if you get stuck.</p>
 
-    <p>Brian Boyer, the visuals director at NPR, recently went on this <a href="https://twitter.com/brianboyer/status/633741935463698432">mini-twitter rant</a>.</p>
-    <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I’m pissed at J-schools for creating young designers with awesome print layout skills.</p>&mdash; Brian Boyer (@brianboyer) <a href="https://twitter.com/brianboyer/status/633741935463698432">August 18, 2015</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <h3>What’s all this Github stuff?</h3>
 
-    <p>Let’s try to change that. </p>
+      <p>Github is kind of like Facebook for programmers. People and organizations have profiles where they host their code. The code is public so other people can collaborate on, fix, share, improve and use code. You may have heard of things like <a href="https://github.com/twbs/bootstrap">Bootstrap</a>, <a href="https://github.com/jquery/jquery">jQuery</a>, and <a href="https://github.com/jashkenas/backbone">Backbone</a> (if not, it’s ok). These are all bundles of code hosted on github for people to use and collaborate on for free. On the internet, unlike, say, parts of academia, copying is encouraged, as long as, like academia, you cite your sources and give credit where credit is due. Programmers are generally lazy, so instead of writing something from scratch, they’ll use frameworks and code bundles that other people have already written. </p>
 
-    <p>This is going to be a more technical course than you’re probably used to.</p>
+      <p>You may have also heard of things like domain names and hosting packages. You may already have already purchased a domain name and a hosting package to host your own website. </p>
 
-    <img src="http://i.imgur.com/MvMxQ1a.gif" alt="">
+      <aside>If you have questions about your personal site (a domain you bought, or hosting), I’m happy to help you get it set up, but we’re not going to cover that formally in this class.</aside>
 
-    <p>A lot of people think a(n) <del>Adobe</del> product is going to come along that will make learning to code (and design, frankly) obsolete. That hasn’t happened yet. These days, web design is design <em>and</em> code. So yes, you’ll be learning to code. Black screen, white text, matrix-level code.</p>
+      <p>Github gives hosting away to each use for free, so you can host your site right on Github’s servers. </p>
 
-    <p>In this course we’ll be using tools that real people use in the real world. Nothing against OnCourse, Onestart, Canvas or anything else IU cooks up, but people don’t use those in real life. We’ll be using good ol’ email, <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="github.com">Github</a>, Google Hangouts, <a href="https://slack.com">Slack</a>, <a href="https://support.google.com/chrome/answer/95346?hl=en">Google Chrome</a> and <a href="http://www.adobe.com/products/illustrator.html">Adobe Illustrator</a>. </p>
+      <p>Your site will live at the address http://your-github-username.github.io. So my portfolio site is hosted on Github is <a href="http://larrybuch.github.io">larrybuch.github.io</a>.</p>
 
-    <p>Here’s how I imagine, in a dream world, things will go down. </p>
+      <h3>Now, to the code.</h3>
 
-    <h2>I’ll upload and email one video lesson every Monday.</h2>
+      <p>As I eluded to in the intro of this course, some people think a program is going to come along that will eliminate the need to write code. We’re going to assume that’s to going to happen. </p>
 
-    <p>Length will vary, but I imagine it will be around an hour. (Considering that if this were an in-person class, we’d be meeting twice a week, 2 hours each, this seems like a steal.)</p>
+      <aside>Which is completely different than Java.</aside>
 
-    <h2>You’ll have one assignment per week, due on Friday before midnight.</h2>
+      <p>The guts of the internet are, generally, HTML, CSS, and JavaScript (JS). My friend Adrian likes to use the analogy of the body when describing what each different part does. </p>
 
-    <p>You’ll get one of three grades. Done well (like an A), done (like a C), not done (like an F). Your final grade is all of your assignments averaged. No late assignments will be accepted. After an assignment is graded, you can resubmit as many times as you’d like for a better grade. Ambition will be rewarded over ease. You’re learning. This is hard and confusing. Failure while aiming high is fine. Not aiming high isn’t. </p>
+      <p><strong>HTML</strong> is the bones, the structure of the site. </p>
 
-    <h2>Throughout the week, I’ll hold office hours at various times for several hours.</h2>
+      <p><strong>CSS</strong> is the skin, the hair, the eyes, the exterior.</p>
 
-    <p>Once I talk to all of you, I’ll try to figure out times that work for everyone. To help you when you get stuck and when your code won’t run, we’ll do this through a combination of Google Hangouts and Slack (group chat).</p>
+      <p><strong>JS</strong> is the muscle. </p>
 
-    <h2>I want you to get a lot out of this course.</h2>
+      <aside>There are other text editors out there (Coda, BBEdit, TextWrangler). You can use any of them you’d like, they’re generally all the same, but I’ll be teaching Sublime. It’s got some nice plugins that make your life easier.</aside>
 
-    <p>In this course I’m trying to give you skills that you can use immediately, add to your resume, and will help you get a job.</p>
+      <p>Sites are just a collection of those three types of files, which we type (code) in a text editor (like Sublime).</p>
 
-    <p>Specifically, at the end of this course you should</p>
+      <p>Instead of exactly describing what each one does, I find it’s easiest to jump right into the code and break some stuff. </p>
 
-    <ul>
-    <li>have better idea of how the internet works</li>
-    <li>know how the command line and git/github works</li>
-    <li>know how to design and code responsive websites with HTML/CSS and a (tiny) bit of javascript</li>
-    <li>understand the design principles that the web is built on</li>
-    <li>have several solid portfolio pieces (including a site to host them on)</li>
-    </ul>
+      <h3>First, we have to create a repository.</h3>
 
-    <p>To that end, I’ll get up early, stay up late, and otherwise help you as much as I can so you succeed. If something’s not working, please let me know. We’ll learn together, make it better and move on. If there’s something I’m not covering that you want me to, let me know. The syllabus can change. </p>
+      <p>Repository’s are bundles of code. In our case, bundles of HTML, CSS and JS. I’d make a folder wherever you keep your valuables (I suffer from the bad habit of saving to the desktop), call it ‘j360’ and this is where all of your stuff for the whole semester will live. </p>
 
-    <h2>A tiny bit about me.</h2>
+      <p>Now, fire up the Github app. </p>
 
-    <p>By day, I’m a graphics editor at <em>The New York Times</em> where I report and make <a href="http://www.nytimes.com/interactive/2015/07/13/world/americas/mexico-drug-kingpin-prison-escape.html">maps</a>, <a href="http://www.nytimes.com/2015/04/17/upshot/how-presidential-campaigns-became-two-year-marathons.html">charts</a>, <a href="http://www.nytimes.com/interactive/2015/01/07/world/europe/charlie-hebdo-shooting-maps.html">diagrams</a>, <a href="http://www.nytimes.com/newsgraphics/2013/09/06/voting-blocs/">interactive graphics</a> and <a href="http://www.nytimes.com/interactive/2015/05/21/us/your-contribution-to-the-california-drought.html">other things that don’t necessarily fall into one of those categories</a>. I graduated from the IU School of Journalism in 2011, so I can likely empathize with your situation more than some of your other instructors. This is my first time teaching at IU (but not my first time teaching), so that might be why this note is dripping with idealism and optimism.</p>
+      <p>In the top left corner, click the plus. Name your repo your-github-username.github.io. No spaces, no caps. It must be exact. Save it in your ‘j360’ folder. Then open the folder in your finder and you’ll notice a folder with the same name has been created it. That’s where we’ll work.</p>
 
-    <p>A full course schedule and the first video lesson is coming soon. </p>
+      <img class="full" src="gifs/add-a-repo.gif" alt="">
 
+      <aside>Note: I've already made my repo so that's why it gives me that little error.</aside>
+
+      <p>We won’t come back to the app until we’re ready to push our changes live.</p>
+
+      <h3>It’s really just a collection of text files.</h3>
+
+      <p>OK, we’ve created a repo. Now we need to fill it up with code. Our first site is going to be pretty basic to start. The first file of every website is the index file. </p>
+
+      <p>Drag your j360 folder to the Sublime icon in your dock, or open Sublime and go to <code class="language-* language-markup">file &gt; open</code> and choose the j360 folder. You’ll see the file structure reflected in the sidebar. </p>
+
+      <img class="full" src="gifs/open-folder-in-sublime.gif" alt="">
+
+      <p>Then go to <code class="language-* language-markup">file &gt; new file</code> to create a new file. Save it immediately. Go to <code class="language-* language-markup">file &gt; save as</code> and save the file inside the your-github-username.github.io folder as <code class="language-* language-markup">index.html</code>.</p>
+
+      <aside>You’ll never have to rewrite this. You’ll usually just copy, paste, and customize this boilerplate stuff.</aside> 
+
+      <p>Then, select all of <a href="http://www.sitepoint.com/a-basic-html5-template/">this code</a> below and paste it in your <code class="language-* language-markup">index.html</code> file. WHOA CODE. Don’t freak out. We’ll go through it line by line.</p>
+
+      <pre><code class="language-markup">&lt;!doctype html&gt;
+
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+          &lt;meta charset="utf-8"&gt;
+
+          &lt;title&gt;The HTML5 Herald&lt;/title&gt;
+          &lt;meta name="description" content="The HTML5 Herald"&gt;
+          &lt;meta name="author" content="SitePoint"&gt;
+
+          &lt;link rel="stylesheet" href="css/style.css"&gt;
+      &lt;/head&gt;
+
+      &lt;body&gt;
+              &lt;!-- The goods go here. --&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+      </code></pre>
+
+      <p>HTML is made up of tags. Tags open and tags close. You open a tag like this <code class="language-* language-markup">&lt;tag&gt;</code>. Inside the tag you put your content, then you close it with a forward slash to let the computer know you’re done, like this <code class="language-* language-markup">&lt;/tag&gt;</code>. </p>
+
+      <p><code class="language-* language-markup">&lt;tag&gt; This will be seen by humans. &lt;/tag&gt;</code> or <code class="language-* language-markup">&lt;h1&gt; This is super important.&lt;/h1&gt;</code> or <code class="language-* language-markup">&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>. </p>
+
+      <p>There are tons of tags. For paragraphs we use <code class="language-* language-markup">&lt;p&gt;</code> tags, to make something bold we use the <code class="language-* language-markup">&lt;strong&gt;</code> tag. If you’ve ever edited html in a blog, you may have used the <code class="language-* language-markup">&lt;a&gt;</code> tag to add a link. We can drop in images with the <code class="language-* language-markup">&lt;img&gt;</code> tag. You don’t have to memorize these; they’re always just a Google away, but you’ll be come more familiar with them with time. </p>
+
+      <p>Ok, here’s a breakdown of what that above stuff means.</p>
+
+      <pre><code class="language-markup">&lt;!doctype html&gt;</code></pre>
+
+      <p>This is just telling the browser that we’re writing html. </p>
+
+      <pre><code class="language-markup">&lt;html lang="en"&gt;</code></pre>
+
+      <p>This is opening the <code class="language-* language-markup">&lt;html&gt;</code> tag and saying use English as our language. If you look down at the bottom, you’ll notice the closing <code class="language-* language-markup">&lt;/html&gt;</code> tag. Everything is wrapped in that. </p>
+
+      <pre><code class="language-markup">&lt;head&gt;</code></pre>
+
+      <p>This is the opening head tag. A site has two main parts. The <code class="language-* language-markup">head</code> and the <code class="language-* language-markup">body</code>. Anything in the <code class="language-* language-markup">&lt;head&gt;</code> portion, the computer cares about (with a few exceptions). Anything in the <code class="language-* language-markup">&lt;body&gt;</code> portion, will actually show up on the site.</p>
+
+      <pre><code class="language-markup">&lt;meta charset="utf-8"&gt;</code></pre>
+
+      <p>This is setting the character set for the computer to use. If you’re coding with standard english characters, you won’t need to mess with this. </p>
+
+      <pre><code class="language-markup">&lt;title&gt;Your Portfolio Site&lt;/title&gt;
+&lt;meta name="description" content="Add your description here."&gt;
+&lt;meta name="author" content="Larry Buchanan"&gt;</code></pre>
+
+      <p>These three lines are mostly for search engines. The title tag sets the title of your site. You’ll want to change this to something like <code>Your Portfolio site</code> or something like that. This is what will show up as the title of your site in the top of the browser and in Google search results. You should also modify the description and the author. </p>
+
+      <img class="full" src="gifs/editing-html.gif" alt="">
+
+      <pre><code class="language-markup">&lt;link rel="stylesheet" href="css/style.css"&gt;</code></pre>
+
+      <p>This is where we’ll link up our css document to add fonts, colors, sizes, spacing, etc. The <code class="language-* language-markup">css</code> refers to the folder its in, and the <code class="language-* language-markup">style.css</code> is the filename. We’ll create that file in a second. And that closes out the <code class="language-* language-markup">&lt;head&gt;</code> section.</p>
+
+      <pre><code class="language-markup">&lt;body&gt;</code></pre>
+
+      <p>The goods go inside of the body tag. Most of the code we write will go here. </p>
+
+      <pre><code class="language-markup">&lt;!-- The goods go here. --&gt;</code></pre>
+
+      <p>This is a comment; it won’t show up on the page (but people can still see it if they inspect the code, so be careful).</p>
+
+      <pre><code class="language-markup">&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+      <p>And then we close our body tag. And close our html tag. </p>
+
+      <h3>Whew. Finally, let’s add some code.</h3>
+
+      <p>Inside of your body tag, delete the comment and add this line.</p>
+
+      <pre><code class="language-markup">&lt;h1&gt; Hello, world. &lt;/h1&gt;</code></pre>
+
+      <img class="full" src="gifs/finally-coding.gif" alt="">
+
+      <p>Save your file (get used to using the shortcut <code>⌘ + s</code> on a mac, <code>ctl + s</code> on a pc).</p>
+
+      <p>Then, right click in Sublime window and choose <code>Open in browser</code>. Your default browser (which I would make Chrome) should open with your website. </p>
+
+      <p>Congrats! You’re a programmer!</p>
+
+      <img class="full" src="https://media.giphy.com/media/dbZlf5GABvIPu/giphy.gif" alt="">
+
+      <p>Jump back to Sublime (I’d get used to using the <code class="language-* language-markup">alt + tab</code> shortcut to switch windows. We’ll be doing this literally thousands of times.) </p>
+
+      <p>Below the <code class="language-* language-markup">&lt;h1&gt;</code> line add this line <code class="language-* language-markup">&lt;p&gt; Totally slaying this code right now. Can’t believe how easy this is.&lt;/p&gt;</code></p>
+
+      <p>Save (<code class="language-* language-markup">⌘ + s</code>), jump to Chrome (<code class="language-* language-markup">alt + tab</code>), and refresh your browser (<code class="language-* language-markup">⌘ + r</code>). Boom. </p>
+
+      <h3>OK, ok, ok backup. What just happened? And, this is it?</h3>
+
+      <p>I know it’s not much to look at, but you just did a lot. Get used to this motion of saving, changing windows and refreshing. This is how it all works. You know your document is saved if there’s a little <code class="language-* language-markup">x</code> <img src="images/saved.png" alt=""> up on the tab in Sublime. If that’s a circle, <img src="images/unsaved.png"> it’s not saved and your changes won’t show up, and you’ll be confused as to why, and you’ll try everything, and you’ll get frustrated, but really your document just isn’t saved. I’ve done this 17,000,000 times.</p>
+
+      <p>OK, what really happened is that you wrote some html and opened it in your browser, which you browser can read, interpret and display. Did you notice the title of your page also changed? </p>
+
+      <img src="images/title.png" alt="">
+
+      <h3>Is this making sense?</h3>
+
+      <p>Change the content of the <code class="language-* language-markup">h1</code> to be Your Name’s Portfolio. And change the description to be a little bit about you.</p>
+
+      <p>Save. Switch to Chrome. Refresh.</p>
+
+      <p>Lookin’ good.</p>
+
+      <p>One more thing. Inside your description, let’s add a link. In my case I’m going to make <code class="language-* language-markup">The New York Times</code> link to the NYT homepage. Links are a bit tricky, but I have faith in you. My code would look like this. </p>
+
+      <pre><code class="language-markup">&lt;p&gt;Larry Buchanan is a graphics editor at &lt;a href="http://nytimes.com/"&gt;The New York Times&lt;/a&gt;. Before that he worked as a freelancer for The New Yorker, The Onion, ESPN and others. Before that, he went to Indiana University, adopted a dog, and lived in a log cabin. &lt;/p&gt;</code></pre>
+
+      <p>So you wrap the <code>&lt;a&gt;</code> tag around the thing you want to to be a link, then you change the <code>href</code> (which stands for hypertext reference) to the url you want it to link to.</p>
+
+      <img class="full" src="gifs/adding-a-link.gif" alt="">
+
+      <p>Want that link to open in a new page? Pretty easy … but I’ll let you figure that out on your own. In your code, make sure the link opens up in a new page. Try googling “open link in own page html” and see what you get. </p>
+
+      <p>I have to do things all day everyday that I either don’t know how to do, or forget how to do. Google is your friend. If you can’t figure it out, you’re not Googling hard enough. <a href="http://stackoverflow.com/">Stack overflow</a> is a great resource for questions like this.</p>
+
+      <h3>Now, for some style.</h3>
+
+      <p>Hang with me, we’re almost done.</p>
+
+      <p>Remember like an hour ago, I said we’d need to create a css file? Let’s do that now. Inside your <code class="language-* language-markup">your-username-here.github.io</code> folder create a folder called <code class="language-* language-markup">css</code>. And in Sublime create a file called <code class="language-* language-markup">style.css</code> and save it inside your <code class="language-* language-markup">css</code> folder.</p>
+
+      <img class="full" src="gifs/css-folder.gif" alt="">
+
+      <p>Your file structure should look like this. </p>
+
+      <img class="full" src="images/file-structure.png" alt="">
+
+      <p>Inside your <code class="language-* language-markup">style.css</code> file lets add a few lines to see what happens. </p>
+
+      <pre><code class="language-css">body {
+  background-color: red;
+}</code></pre>
+
+      <p>You can probably figure out what’s going to happen. Save. Switch to Chrome. Refresh.</p>
+
+      <img class="full" src="gifs/red-background.gif" alt="">
+
+      <p>Starting to see how this all fits together? Let’s change the size of our name and add some space below it. It’s in an h1 tag. I’m also going to change the background color to a more appealing cyan.</p>
+
+      <pre><code class="language-css">h1 {
+  font-size: 73px;
+  margin-bottom: 30px;
+}</code></pre>
+
+      <img class="full" src="gifs/name-size.gif" alt="">
+
+      <p>Look at that. Let’s change the font of our paragraph from serif (fonts with little feet, think Times New Roman, Georgia) to sans-serf (fonts without feet, think Arial, Helvetica). </p>
+
+      <pre><code class="language-css">p { 
+  font-family: sans-serif;
+}</code></pre>
+
+      <img class="full" src="gifs/font-change.gif" alt="">
+
+      <p>Nice. Now I’ve given you enough ammo to be dangerous. Play around with this a little bit more. See what you come up with. Use Google. And then put it on the Internet.</p>
+
+      <h3>Doing it live.</h3>
+
+      <p>Feeling good? The whole time, Github has been watching your changes. If you go back to the Github app, notice your index.html file and your style.css file are listed with the changes you made.</p>
+
+      <p>We need to push all of this up to Github, and because we named our repository with your-username.github.io, it will publish our files to that url. </p>
+
+      <p>In the summary box, type a little message about what you did. This is called a commit message. This isn’t too crucial now, but becomes more important as your projects grow, you try new things, and you collaborate with other people. For now, type something like <code>first commit</code>. Then hit <code>commit and sync master</code>.</p>
+
+      <img class="full" src="gifs/pushing-to-git.gif" alt="">
+
+      <p>Now, in your browser, head to your-username.github.io. This might take a few minutes (up to 15), but it should be live on the internet.</p>
+
+      <p>If you want to make changes, no problem. Make them locally (that means on your computer), test them out, and then go back to Github, add a commit message, and commit and sync those changes. They’ll update instantly online.</p>
+
+      <h3>Your assignment.</h3>
+
+      <p>Have a website live on the internet by Friday at midnight at your-username.github.io.</p>
+
+      <p><strong>There’s no need to turn anything in.</strong> Github records every time you push something and it’s all public. When I go to grade these, I’m just going to go to your-github-username.github.io. If I see something, I’ll grade it. If not, you’re out of luck. Reach out to me before this happens if you’re having trouble.</p>
+
+    </div>
   </div> <!-- end container -->
+
+  <div class="posts">
+    <span class="kicker">older stuff</span>
+    <div class="post">
+      <h3><a href="/intro">Introduction</a></h3>
+      <span class="kicker light">August 24.</span>
+      <p>Thanks for enrolling in this course. The Internet is a fun place, so this should be fun.</p>
+    </div>
+  </div>
+
+  <script src="js/prism.js"></script>
   <script src="//use.typekit.net/nxp4xpr.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
-</body></html>
+</body>
+</html>
