@@ -116,6 +116,19 @@ aside {
   border-bottom: 1px solid rgba(0,0,0,.4);
 }
 
+.post a {
+  color: #333;
+}
+
+ul {
+  margin-bottom: 1em;
+  font-family: "rooney-sans", 'Helvetica Neue', arial, sans-serif;
+}
+
+li {
+  list-style: circle;
+}
+
 
 /*h3 {
   font-family: "rooney-web", 'Helvetica Neue', arial, sans-serif;
