@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<title>MSCH-J360 :: Web Design</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/prism.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+<body>
+  <header>
+    <a href="/"><h1><span class="light">J360</span> Web Design</h1></a>
+    <nav>
+      <p>Lessons posted Monday. Projects due Friday. <a href="https://plus.google.com/hangouts/_/g55oo7bougg6b5f326f7m4avcya" target="_blank">Google Hangout</a> • <a href="https://j360.slack.com" target="_blank">Slack</a></p>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="current-lesson">
+
+      <span class="kicker">September 14.</span>
+      <h2><span class="light">3.</span> Is this making sense?</h2>
+      <p><span class="kicker light">Goal</span> To think about how html is structured, and to start to apply more advanced css techniques.</p>
+      <p><span class="kicker light">due</span> <strong>Your assignment is due Friday before midnight.</strong></p>
+
+      <p><span class="kicker light">Lost?</span> Drop any and all questions in <a href="https://j360.slack.com/messages">Slack</a>. I'll have office hours this week in the <a href="https://plus.google.com/hangouts/_/g55oo7bougg6b5f326f7m4avcya">Google Hangout</a> (just jump in, I'll be in there) <strong>from 7 to 8 p.m. on Wednesday and Thursday.</strong></p>
+      
+      <p>You might still be a bit confused, but I hope things are starting to click and you’ll be on your way to html/css jedi status faster than Donald Trump’s historic rise in the polls. What a guy. </p>
+
+      <h3>Anyway. In general, great job on lesson 2. </h3>
+
+      <p>The point was to start to get you thinking about how you can use different style properties to emphasize certain things. And how much you can actually do with design, even when I take away color, size, images and typefaces. </p>
+
+      <p>It’s not always about making things big and red. Although that does help sometimes.</p>
+
+      <p>This week, I’m going to go over some more advanced HTML and CSS techniques, and you’re going to replicate a screenshot I post from scratch.</p>
+
+      <p>I’ll provide the content, and you’ll need to create a new repo, set up your files, code up the HTML, and add style. </p>
+
+      <h3>Before we get started, <br>what’s the future of your portfolio site?</h3>
+
+      <p>From now on, you’re in charge of the look, feel and content of your portfolio site. Each week, after you push up the project for that week, you should add it to your portfolio site as a link in your projects section somewhere with a date, title, and description.</p>
+
+      <h3>And a few housekeeping notes.</h3>
+
+      <p>1. Indent your code properly. Your html and css should be neat, clean and easily readable. You don’t want to develop messy habits with code. Your future self and co-workers will thank you. When your sites get longer and more complicated, and you forget one <code class="language-markup">&lt;</code>, it’s a lot easier to find if your code is neat.</p>
+
+      <p>2. Always check your live site. Don’t just assume you published it.</p>
+
+      <p>3. Make the changes I suggest in your code, and commit and sync them. In web design and code the little things matter. Something as simple as an unclosed <code class="language-markup">&lt;a&gt;</code> tag will break everything, so fix the small stuff, and put what you changed in your commit message.</p>
+
+      <p>4. Paragraphs, spans, links, lists can all have classes and ids, not just divs. Only add <code>divs</code> and classes as need be for style purposes.</p>
+
+      <h3>The Validator.</h3>
+
+      <p>After you push up your new code, paste the url <a href="https://validator.w3.org/">here</a>. This site validates your code to make sure there are no errors. It will tell you if you have any tag misspellings, are missing any tags, forgot to close your <code>&lt;/a&gt;</code> tag, whatever. </p>
+
+      <h3>OK, now the lesson.</h3>
+
+      <iframe width="780" height="439" src="https://www.youtube.com/embed/ms-qDfW04ks" frameborder="0" allowfullscreen></iframe>
+
+      <p>Additional links about things covered in the video.</p>
+
+      <p><a href="https://css-tricks.com/forums/topic/display-block-vs-inline/">Inline vs. Block</a></p>
+
+      <p><a href="https://css-tricks.com/all-about-floats/">Floated elements</a></p>
+
+      <h3>What now? The assignment.</h3>
+      <p>Your assignment is to recreate this screenshot in code.</p>
+      <img class="full" src="../images/screenshot.jpg" alt="">
+      <p>You can get a full-sized version by right clicking and opening the image in a new tab.</p>
+
+      <p>1. Create a <strong>new repo</strong> in the Github app. Call the repo ‘lesson–3’.</p>
+      <p>2. Create a blank <code>index.html</code> file. </p>
+      <p>3. Paste in the boilerplate junk. (You can find this in lesson 1, or write it from scratch, if you’d like).</p>
+      <p>4. Make a css folder.</p>
+      <p>5. Create and save a style.css file inside your css folder. Save a copy of the reset.css stylesheet inside your css folder. </p>
+      <p>6. Link up your <code>reset.css</code> and <code>style.css</code> files in the <code>&lt;head&gt;</code> of your html. </p>
+      <p>7. Type in some code and open your site in the browser to make sure everything is connected and working fine. </p>
+      <p>8. Figure out the structure for the html. Based on the screenshot, how would you structure this page in html? I’d diagram the structure on paper first. What’s your h1? What should be wrapped in a div? What classes should each element have, if any at all?</p>
+
+      <p><strong>Here’s the content</strong>, so you don’t have to retype it.</p>
+
+      <pre> <code class="language-markup">Is this making sense?
+
+This will serve as a little exercise to see how well all this stuff is clicking, in addition to getting you comfortable with some more advanced styling techniques. This is a screenshot of a site.
+
+1. Some boxes in a row.
+Here’s a bunch of boxes floated next to each other with numbers in the middle, but two of them are special.
+
+B
+L
+O
+C
+K
+S
+!
+
+2. This is a photo of a cat.
+
+Drop an image of a cat here that fills the width of this column. You’ll probably have to use something like width: 100%;. And for that little guy, you’ll have to use something like font-family: monospace;.
+
+3. This is a big link.
+
+When you hover over it, it changes color. When you click it, it opens up Google in another tab. You don’t need to use a div for this. An a tag is an inline element, but you can make it a block element with css.</code></pre>
+
+      <p>9. Once you have the structure down, start in on the style. I like to start broad, to narrow. What’s the fewest lines of code I can write to make this work?</p>
+      <p>10. When you’re ready to push things live, it’s a little different this time. In the github app you’ll need to commit and sync your changes like normal to the master branch, but they won’t show up anywhere live because this is a new repo, not linked to your portfolio site. <strong>After</strong> you commit and sync your changes to master, we need to create a new branch in the github app called <code class="language-markup">gh-pages</code>. Then commit and sync your changes to the gh-pages branch and check the url http://your-github-username.github.io/lesson–3. Your site should show up there.</p>
+      <p>11. <a href="https://validator.w3.org/">Validate</a> your html to make sure don’t have any code errors. If you do, fix them locally, make sure things look ok, then push your changes to master and gh-pages.</p>
+      <p>12. I think that’s all. Good work!</p>
+
+    </div>
+  </div> <!-- end container -->
+
+  <div class="posts">
+    <span class="kicker">older stuff</span>
+    <div class="post">
+      <h3><a href="/lesson-3">Lesson 3 — Is this making sense?</a></h3>
+      <span class="kicker light">September 14.</span>
+      <p>Thinking about how html is structured, and to start to apply more advanced css techniques.</p>
+    </div>
+    <div class="post">
+      <h3><a href="/lesson-2">Lesson 2 — The web is a rectangle.</a></h3>
+      <span class="kicker light">September 7.</span>
+      <p>By the end of this lesson, you’ll have turned your portfolio site into a minimalist masterpiece.</p>
+    </div>
+    <div class="post">
+      <h3><a href="/lesson-1">Lesson 1 — Hello, World.</a></h3>
+      <span class="kicker light">August 31.</span>
+      <p>By the end of this lesson, you’ll have a website live on the internet. No training wheels.</p>
+    </div>
+    <div class="post">
+      <h3><a href="/intro">Introduction</a></h3>
+      <span class="kicker light">August 24.</span>
+      <p>Thanks for enrolling in this course. The Internet is a fun place, so this should be fun.</p>
+    </div>
+  </div>
+
+  <script src="../js/prism.js"></script>
+  <script src="//use.typekit.net/nxp4xpr.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</body>
+</html>
