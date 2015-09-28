@@ -18,165 +18,29 @@
   <div class="container">
     <div class="current-lesson">
 
-      <span class="kicker">September 21.</span>
-      <h2><span class="light">4.</span> Mo' columns, mo' problems.</h2>
-      <p><span class="kicker light">Goal</span> To think about grids, how they're structured, how they help, and how they can give form to content.</p>
+      <span class="kicker">September 28.</span>
+      <h2><span class="light">5.</span> Status check. And code review.</h2>
+      <p><span class="kicker light">Goal</span> Let's review your code to make sure this is all making sense.</p>
       <p><span class="kicker light">due</span> <strong>Your assignment is due Friday before midnight.</strong></p>
 
-      <p><span class="kicker light">Lost?</span> Drop any and all questions in <a href="https://j360.slack.com/messages">Slack</a>. I'll have office hours this week in the <strong>from 8:30 to 9:30 p.m. on Thursday in Ernie Pyle Hall</strong>. That's right, I'm in Bloomington this week and next week.</p>
-
-      <h3>A few notes on your code from last week.</h3>
-      <ol>
-        <li>
-          <p>1. Don't use <code class="language-markup">&lt;hr&gt;</code>s. Use borders instead. 
-      There are very few times you want to actually use an <code class="language-markup">&lt;hr&gt;</code> tag to crate a line. It's better to use borders instead. You have more control over them.
-          </p>
-        </li>
-      <li><p>Headings that do the same job get the same tag. 
-      <code class="language-markup">&lt;h1&gt;</code> we use on a page once, for the most important thing. <code class="language-markup">&lt;h2&gt;</code>s come next, then <code class="language-markup">&lt;h3&gt;</code>s, etc. until <code class="language-markup">&lt;h6&gt;</code>s. In the last lesson, all of the questions were the same size, style, importance, etc. So they should have all been <code class="language-markup">&lt;h2&gt;</code>s. </p></li>
-      <li><p>Everything goes inside your <code class="language-markup">&lt;body&gt;</code> tag (except linking your css and your <code class="language-markup">&lt;title&gt;</code>
-      All of the code you want visible to the browser should go inside your <code class="language-markup">&lt;body&gt;</code> tag. You shouldn't wrap your body tag inside anything. </p></li>
-      <li><p>Start to redesign your portfolio site. As you learn more skills each week, put those back into your portfolio site. Link all of your projects to your  site with a date, title, and description.</p></li>
-      </ol>
-
-      <h3>This week we're talking about grids.</h3>
-
-      <p>Grids give order to content and establish hierarchy. </p>
-
-      <p>Take a look here at The New York Times site and it's underlying grid. </p>
-      <img src="gifs/4-nyt-grid.gif" alt="">
-
-      <p>Pretty simple 6 equal columns. And then how that grid gets split up into chunks.</p>
-      <img src="gifs/4-nyt-grid-2.gif" alt="">
-
-      <p>Notice how by sticking to the 6 columns, things feel organized and even, but some things feel more important than others. By using grids as the basis for our layout, we can start to signal to readers what's most important.</p>
-
-      <p>Here's Buzzfeeds grid. </p>
-      <img src="gifs/4-bf-grid-2.gif" alt="">
-
-
-      <p>Now that you've seen the underlying grids here, you'll start seeing them everywhere. </p>
-
-      <h3>Making a grid in CSS.</h3>
-
-      <p>There are many different ways to create a grid in CSS. There are also many different frameworks you can use. We're going to start by using a framework called <a href="http://getskeleton.com/">Skeleton</a>. Skeleton gives us a 12-column 960px-wide fluid grid that we can implement pretty easily. It's just a bunch of css that some very kind person wrote and let's everyone use for free. Gotta love the internet.</p>
+      <p><span class="kicker light">Lost?</span> Drop any and all questions in <a href="https://j360.slack.com/messages">Slack</a>. I'll have office hours this week in the <strong>from 8:30 to 9:30 p.m. on Tuesday and Thursday in Ernie Pyle Hall Room 210</strong>. Please stop by for a code review and a chat.</p>
 
       <h3>The Assignment ...</h3>
-      
-      <img class="full" src="https://s-media-cache-ak0.pinimg.com/736x/97/d3/36/97d336080049dcfc050a354bef6d86d6.jpg" alt="">
-      <img class="full" src="https://s-media-cache-ak0.pinimg.com/736x/d6/4f/16/d64f16ee9d9230a6ab2872b1e4749b22.jpg" alt="">
-      <img class="full" src="https://s-media-cache-ak0.pinimg.com/736x/5d/c4/9b/5dc49bbe1993b224d7f2a0bfaf2492ee.jpg" alt="">
-      <img class="full" src="https://s-media-cache-ak0.pinimg.com/736x/e4/ba/c0/e4bac0bbf7d4a1c297c4a732b9e19c49.jpg" alt="">
 
-      <p>... this week is to create a web poster based on the work of <a href="https://en.wikipedia.org/wiki/Josef_M%C3%BCller-Brockmann">Josef Müller-Brockmann</a> for the 2016 Olympics in Rio. More details are at the bottom.</p>
-
-      <h3>Let's get going.</h3>
-
-      <p>Here we go. I'll get you up and running, and then leave you to finish.</p>
-
-      <p>We're going to start a project like we always do. You should be getting pretty familiar with this by now. Create a new repo called <code class="language-markup">rio-2016</code>, set up your file structure, make your index.html file, paste in our HTML boilerplate, add your css folder and your style.css file, add a reset.css stylesheet, add one line of style to your style.css and preview it in the browser to make sure everything is all good.</p>
-
-      <h3>Ok, now for Skeleton.</h3>
-
-      <p>Download <a href="https://raw.githubusercontent.com/msch-j360/msch-j360.github.io/master/css/skeleton.css">this</a> css file. And include it after your reset, but before your style.css like this:</p>
-      <img class="full" src="gifs/link-style.png" alt="">
-
-      <p>Like I said, this is just a chunk of css that we can use to make our live easier. Copying and pasting code is almost always OK, as long as you attribute it. Give props where props are due. Build those code Karma points.</p>
-
-      <p>OK, anyway, Skeleton is super easy to use. First things first, you have to wrap everything in a <code class="language-markup">div</code> with a class of <code class="language-markup">container</code>.</p>
-
-      <p>Like I said above, Skeleton gives us a 960px-wide 12-column grid to start. So, once you have your html structured how you want it, you can simply add classes to divs to signify rows and columns.</p>
-
-      <p>If you wanted something to be two columns wide you add the classes <code class="language-markup">two</code> and <code class="language-markup">columns</code> to the thing you wanted to be two columns.</p>
-
-      <img class="full" src="images/two-columns.png" alt="">
-
-      <p>And what it looks like when you get to 8 columns.</p>
-
-      <img class="full" src="images/eight-columns.png" alt="">
-
-      <p>When you're ready to start a new row, simply add the class <code class="language-markup">row</code> to the div wrapping the row. </p>
-
-      <img class="full" src="images/row.png" alt="">
-
-      <p>You can offset your columns — move them over by a certain number of columns — by adding classes like <code class="language-markup">offset-by-one column</code> and <code class="language-markup">offset-by-eight columns</code>.</p>
-    
-      <h3>That's as far as I'm gonna take it.</h3>
-
-      <p>There's a ton of great, open-source stuff out there like Skeleton and most of it has documentation associated with it. The documentation explains how to use a chunk of code. So, if you get lost, or don't know how to do something, it's likely in the documentation. The notes for Skeleton live <a href="http://getskeleton.com/">here</a> in case you get stuck. Learning to read documentation is super helpful. What a better time to learn than now?</p>
-
-      <h3>Assignment details.</h3>
-
-      <p>The assignment is to create a web poster based on the work of <a href="https://en.wikipedia.org/wiki/Josef_M%C3%BCller-Brockmann">Josef Müller-Brockmann</a> for the 2016 Olympics in Rio. </p>
-
-      <img class="full" src="http://www.ben-morris.com/wp-content/library/muller-brockmann-8.jpg" alt="">
-
-      <ul>
-        <li>No images. (But you can use CSS to create whatever you'd like.)</li>
-        <li>All colors are OK. 
-        Think about the colors of Rio and the colors of the Olympics. My advice? Use 1 or 2 colors.</li>
-        <li>Only Helvetica. </li>
-        <li>You can vary the type size. </li>
-        <li>Site must be 960px wide and use the skeleton framework.</li>
-        <li>Include some of the text below.</li>
-      </ul>
-
-      <p>Here's some text you might include. Think about what's most important. </p>
-
-      <pre> <code class="language-markup">2016 Summer Olympics
-Rio de Janeiro, Brazil
-
-306 events
-28 sports
-Opening ceremony August 5
-Closing ceremony August 21
-
-List of events
-Diving 
-Swimming 
-Synchronized swimming 
-Water polo 
-Archery
-Badminton 
-Basketball 
-Boxing 
-Canoeing
-Cycling
-Equestrian
-Dressage 
-Fencing 
-Field hockey 
-Football 
-Golf 
-Gymnastics
-Handball 
-Judo 
-Modern pentathlon 
-Rowing 
-Rugby
-Sailing
-Shooting 
-Table tennis 
-Taekwondo 
-Tennis 
-Triathlon 
-Volleyball 
-Weightlifting 
-Wrestling</code></pre>
-
-    <h3>Inspiration</h3>
-    <p>More of <a href="https://www.pinterest.com/fathersedition/josef-m%C3%BCller-brockmann/">Brockmann's work</a>.</p>
-
-    <h3>When you're done ...</h3>
-    <p>... don't forget to validate your code, push it up to the master branch, then create a gh-pages branch, and push it to that branch to publish to the web.</p>
-
-    <p>I'd also recommend adding Skeleton to your portfolio site, to more easily design, code and keep that site organized.</p>
-
+      <p>... this week is simple.</p>
+      <p>1. Stop by on Tuesday or Thursday between 8:30 and 9:30 for a code review. It will only take a few minutes, you can ask any and all questions you've got, and I'll review your rio-2016 code to make sure everything looks good.</p>
+      <p>2. Start to redesign your portfolio sites, keeping everything you've learned so far in mind. Add your current projects (lesson-3 and rio poster) to your projects list. Push your changes to github.</p>
+      <p>That's all. See you soon.</p>
     </div>
   </div> <!-- end container -->
 
   <div class="posts">
     <span class="kicker">older stuff</span>
+    <div class="post">
+      <h3><a href="/lesson-4">Lesson 4 — Mo' columns, mo' problems.</a></h3>
+      <span class="kicker light">September 21.</span>
+      <p>To think about grids, how they're structured, how they help, and how they can give form to content.</p>
+    </div>
     <div class="post">
       <h3><a href="/lesson-3">Lesson 3 — Is this making sense?</a></h3>
       <span class="kicker light">September 14.</span>
