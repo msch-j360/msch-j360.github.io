@@ -17,58 +17,61 @@
   </header>
   <div class="container">
     <div class="current-lesson">
-
-      <span class="kicker">October 12.</span>
-      <h2><span class="light">6.</span> Getting a bit more complicated.</h2>
-      <p><span class="kicker light">Goal</span> To start to build more complicated sites. I'll give the you most of the HTML. You have to do the rest.</p>
-      <p><span class="kicker light">due</span> <strong>Your assignment is due Friday before midnight.</strong></p>
+      <span class="kicker">October 19.</span>
+      <h2><span class="light">7.</span> TKTKTK</h2>
+      <p><span class="kicker light">Goal</span> To think about sizes other than desktop. At this point, we expect websites to work just as well on phones and tablets as they do on desktop.</p>
+      <p><span class="kicker light">due</span> <strong>Your assignment is due Sunday before midnight. (because I was late on posting this one)</strong></p>
 
       <p><span class="kicker light">Lost?</span> Drop any and all questions in <a href="https://j360.slack.com/messages">Slack</a>. I'll have office hours this week in Slack <strong>from 8:30 to 9:30 p.m. on Wednesday and by appointment on Thursday</strong>. Don't suffer in silence.</p>
 
-      <h3>Another copying exercise.</h3>
-      <p>Here's a screenshot of a site I coded up. You're going to try to replicate this exactly.</p>
-      <a href="images/screenshot.png" target="_blank"><img class="full" src="images/screenshot.png" alt=""></a>
-      <p>Click for full size.</p>
-      <p>I've coded up most of the <a href="http://msch-j360.github.io/lesson-6/html.html">HTML</a> for you. But, you'll have to download and include a reset stylesheet, Skeleton (<a href="http://msch-j360.github.io/lesson-6/skeleton.css">which you can download here</a>) and your own style.css file. You will also need to go into the HTML and add "columns" to match the structure I have in the screen shot. Remember, you have 12 columns to work with.</p>
-      <p>I'm also using three <a href="https://www.google.com/fonts">Google Fonts</a>: Roboto Condensed (for the h2s), Lora (for the h3/h4s) and Lato (for kickers, and other sans-serf text). The Google Fonts site has some good documentation on how to use their fonts in your projects. You'll need to figure that out.</p>
+      <h3>Not just desktop anymore.</h3>
+      <img class="full" src="images/devices.jpg" alt="">
+      <p><strong>We're designing for all of these devices at the same time.</strong> Desktop, tablet, mobile ... watch? Not yet, but soon. All of these different platforms have different considerations. We have much less real estate on a tablet or a phone, so that means we have to design things different.</p>
+      <p>We'll start with a simple example and work our way up to something a little more complicated.</p>
+      <h3>Secret: You've already been using them.</h3>
+      <p>If you look at your news-site example from last week, and resize your browser, you should see all of the columns shrink down and eventually collapse into one. If you look inside the guts of your <code>skeleton.css</code> file, you'll notice that some of the css lines start with <code>@media</code>. Those are media queries. They allow us to target certain screen sizes and set style rules within them.</p>
 
-      <h3>So here's what you'll need to do.</h3>
-      <p>1. Create a new github repo inside your j360 folder. Call it news-site</p>
-      <p>2. Add all the files you normal need for a project. Your index.html, css folder, and all of your stylesheets (reset, <a href="http://msch-j360.github.io/lesson-6/skeleton.css">skeleton</a>, style.css).</p>
-      <p>3. Copy the html from <a href="http://msch-j360.github.io/lesson-6/html.html">here</a>. Hint: You'll have to view the page source to get the HTML. View > Developer > View Page Source</p>
-      <p>3. Go through the html and set how many columns each chunk should be using the screenshot as your guide. I'll give you the first one: On the first div with a class of "adbox" you'll want to add two classes: "twelve" and "columns". On the div with a class of main-sidebar you'll want to add two classes: "three" and "columns". And so on.</p>
-      <p>4. Once everything is in the right spot, jump into the css. Start at the top, and style things all the way down.</p>
-      <p>5. When yours matches mine, commit your changes to github. Create a gh-pages branch and push your changes up to to make them live.</p>
-      
-      <p>That's all guys. Good luck and let me know if you're stuck. Due on Friday at midnight.</p>
+      <img src="images/media-query.png" alt="">
 
+      <p>I added a media query to this page that changes the background if the page size is between 600 and 650px wide. Resize this browser window and watch the background color change.</p>
+      <p>Now inspect the css on this page to try to find the line that makes it do that. Can you modify the line to change the background color to cyan?</p>
+
+      <h3>Let's start a new project.</h3>
+      <p>Create a new git-repo inside your J360 folder called <strong>responsive-sites</strong>.</p>
+      <p>Set up the project like normal. This should all feel routine. Just going through the motions. Create an index.html file, paste in the boilerplate HTML, create a css folder with a style.css file and a reset.css file. Link those files up in the head of your html file. Make sure everything is linked up and working before moving on.</p>
+      <p></p>
     </div>
   </div> <!-- end container -->
 
   <div class="posts">
     <span class="kicker">older stuff</span>
     <div class="post">
-      <h3><a href="/lesson-5">Lesson 5 — A Simple Assignment.</a></h3>
+      <h3><a href="/lesson-6">6. Getting a bit more complicated.</a></h3>
+      <span class="kicker light">October 12.</span>
+      <p>I'll give the you most of the HTML. You have to do the rest.</p>
+    </div>
+    <div class="post">
+      <h3><a href="/lesson-5">5. A Simple Assignment.</a></h3>
       <span class="kicker light">September 28.</span>
       <p>Just a code review with me.</p>
     </div>
     <div class="post">
-      <h3><a href="/lesson-4">Lesson 4 — Mo' columns, mo' problems.</a></h3>
+      <h3><a href="/lesson-4">4. Mo' columns, mo' problems.</a></h3>
       <span class="kicker light">September 21.</span>
       <p>To think about grids, how they're structured, how they help, and how they can give form to content.</p>
     </div>
     <div class="post">
-      <h3><a href="/lesson-3">Lesson 3 — Is this making sense?</a></h3>
+      <h3><a href="/lesson-3">3. Is this making sense?</a></h3>
       <span class="kicker light">September 14.</span>
       <p>Thinking about how html is structured, and to start to apply more advanced css techniques.</p>
     </div>
     <div class="post">
-      <h3><a href="/lesson-2">Lesson 2 — The web is a rectangle.</a></h3>
+      <h3><a href="/lesson-2">2. The web is a rectangle.</a></h3>
       <span class="kicker light">September 7.</span>
       <p>By the end of this lesson, you’ll have turned your portfolio site into a minimalist masterpiece.</p>
     </div>
     <div class="post">
-      <h3><a href="/lesson-1">Lesson 1 — Hello, World.</a></h3>
+      <h3><a href="/lesson-1">1. Hello, World.</a></h3>
       <span class="kicker light">August 31.</span>
       <p>By the end of this lesson, you’ll have a website live on the internet. No training wheels.</p>
     </div>
