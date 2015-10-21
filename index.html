@@ -18,7 +18,7 @@
   <div class="container">
     <div class="current-lesson">
       <span class="kicker">October 19.</span>
-      <h2><span class="light">7.</span> TKTKTK</h2>
+      <h2><span class="light">7.</span> All these devices.</h2>
       <p><span class="kicker light">Goal</span> To think about sizes other than desktop. At this point, we expect websites to work just as well on phones and tablets as they do on desktop.</p>
       <p><span class="kicker light">due</span> <strong>Your assignment is due Sunday before midnight. (because I was late on posting this one)</strong></p>
 
@@ -37,11 +37,44 @@
       <p>Now inspect the css on this page to try to find the line that makes it do that. Can you modify the line to change the background color to cyan?</p>
 
       <h3>Let's start a new project.</h3>
-      <p>Create a new git-repo inside your J360 folder called <strong>responsive-sites</strong>.</p>
-      <p>Set up the project like normal. This should all feel routine. Just going through the motions. Create an index.html file, paste in the boilerplate HTML, create a css folder with a style.css file and a reset.css file. Link those files up in the head of your html file. Make sure everything is linked up and working before moving on.</p>
-      <p></p>
+      <p>Create a new git-repo inside your J360 folder called <code>responsive-site</code>.</p>
+      <p>Set up the project like normal. This should all feel routine. Just going through the motions. Create an index.html file, paste in the boilerplate HTML, create a css folder with a <code>style.css</code> file and a <code>reset.css</code> file. Link those files up in the head of your html file. Make sure everything is linked up and working before moving on.</p>
+      
+      <h3>The basic media query</h3>
+      <p>In your <code>index.html</code> file, add two divs with classes and text like this.</p>
+      <img class="full" src="images/divs.png" alt="">
+      <p>In your <code>style.css</code> file, style the divs with a class of <code>box</code> to have a width and a height and a background color so we can see them. Know that you don't have to set widths in pixels. You can use percentages if you want a div to fill up a certain percentage of your browser.</p>
+      <p>Now, what we want to do with media queries is show the div with a class of show-desktop on desktop and the div with a class of show-mobile on mobile. A good breakpoint to use is 600 pixels. Show the mobile div below 600px and show the desktop div above 600px.</p>
+      <img class="full" src="images/query.png" alt="">
+      <p>This is what that looks like. We hide the <code>show-mobile</code> class in your regular css, then in the media query, we show it by changing <code>display: none;</code> to <code>display: block;</code>. Same thing, except the opposite for the desktop version. We can use this to restyle things based on different viewport sizes. You can also add the <code>show-desktop</code> or <code>show-mobile</code> classes to any element you want to show or hide on desktop or mobile.</p>
+      <p>If you want to change the background color of the site on mobile, you could do it like this.</p>
+      <img class="full" src="images/background-color.png" alt="">
+      <p>Simply styling the body element within the media query. So, below 600px it changes the background color to red. Above, 600px it goes back to white.</p>
+      <p>If we want the background to be red only on screens between 500px and 800px wide, we can add another media query and chain the two declarations together.</p>
+      <img class="full" src="images/min-max.png" alt="">
+      <img class="full" src="gifs/resize.gif" alt="">
+      <p>These are a few common media queries to target different device widths.</p>
+      <img class="full" src="images/general-mq.png" alt="">
+
+      <h3>Starting to make sense?</h3>
+      <p>There's a lot you can do with media queries. Here's a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">good guide</a> on how far you can push them. They're incredibly powerful because they allow us to target and change the design based on the device size or screen. Which brings us to ... </p>
+
+      <h3>... the assignment.</h3>
+      <p>Your assignment this week is to keep exploring media queries and styling things for tablet and mobile. There are a few <a href="http://codepen.io/bradfrost/full/sHvaz">regular desktop to mobile patterns</a> that I'm sure you're familiar with: 2 items side by side on desktop are stacked on mobile, navigation that is in line long line on desktop is collapsed into a hamburger menu on mobile, tables are collapsed down into only their essentials.</p>
+      <p>Try coding a few of these up. 2 images side by side on desktop, stacked on mobile. An alternate navigation bar on mobile/desktop. Slightly smaller text on mobile, to fit more text per screen. Images that stretch to 100% on mobile.</p>
+      <p>Here's a nice list of <a href="https://bradfrost.github.io/this-is-responsive/patterns.html">responsive patterns</a> with some code samples to show you how it's done.</p>
+      <p>Once you've coded up a few desktop/mobile examples with some various media queries, push your stuff up to github. You have until <strong>Sunday</strong> night on this one since I was late in getting the lesson posted.</p>
+
+      <p>Holler if you have questions, and drop any examples of good mobile websites into Slack!</p>
+      
+
+
+
+
+      
     </div>
   </div> <!-- end container -->
+
 
   <div class="posts">
     <span class="kicker">older stuff</span>
